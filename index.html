@@ -7,6 +7,34 @@
     <title>SlideShow</title>
 </head>
 <body>
-    
+    <header>
+        <h1>SlideShow</h1>
+    </header>
+    <form class="form" method="post" id="form">
+        <div class="input_form">
+            <label for="img" >Foto</label>
+            <input type="file" accept="image/*" name="img" id="img">
+        </div>
+        <div class="input_form">
+            <label for="desc_input">Descrição</label>
+            <input type="text" name="desc_input" id="desc_input">
+            <input type="button" value="Enviar" name="desc" id="desc" onclick="SubmitFunction(event) && getItems()">
+        </div>
+        <div class="input_form">
+            <input type="button" value="Atualizar Lista" name="atualizar_lista" id="atualizar_lista">
+        </div>
+        <div class="input_form">
+            <input type="button" value="Anterior" name="anterior" id="anterior">
+            <label for="valor_exibindo">Exibindo</label>
+            <input type="text" name="valor_exibindo" id="valor_exibindo">
+            <input type="button" value="Proximo" name="proximo" id="proximo">
+        </div>
+        <div id="view_form">
+            
+        </div>
+        <div id="message_success"></div>
+        <div id="message_error"></div>
+    </form>
+    <script src="script.js"></script>
 </body>
 </html>
